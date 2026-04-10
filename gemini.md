@@ -4,23 +4,20 @@
 {
   "repository": {
     "name": "Plumbing Landing page",
-    "owner": "soumitrohalder",
+    "owner": "iamShaaan",
     "visibility": "public",
     "description": "Premium landing page for plumbing services.",
-    "files_to_include": [
-      "Plumbing project/",
-      "architecture/",
-      "claude.md",
-      "task_plan.md",
-      "findings.md",
-      "progress.md",
-      "gemini.md"
-    ],
-    "files_to_exclude": [
-      ".tmp/",
-      "node_modules/"
-    ]
+    "remote_url": "https://github.com/iamShaaan/Plumbing-Landing-page.git",
+    "files_included": "All source + project metadata",
+    "branch": "main"
   },
   "deployment_trigger": "manual_push"
 }
 ```
+
+# Maintenance Log
+
+## 2026-04-10: Initial Export
+- **Event:** Successfully created and populated the project's new GitHub repository.
+- **Action:** Created `iamShaaan/Plumbing-Landing-page`, linked local repository via a temporary PAT-authenticated remote, and pushed all files including planning metadata.
+- **Status:** Complete and Verified.
