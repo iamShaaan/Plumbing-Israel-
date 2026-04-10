@@ -23,6 +23,7 @@
   "phone": "string",
   "service": "string",
   "message": "string",
+  "address": "string",
   "timestamp": "ISO-8601 string",
   "metadata": {
     "source": "landing-page",
@@ -41,4 +42,8 @@
 ## 2026-04-10: Webhook Update
 - **Event:** Update booking form to send data to n8n webhook.
 - **Action:** Update `script.js` to use `fetch` with the new n8n URL.
+- **Status:** Complete and Verified.
+## 2026-04-10: Location Field Addition
+- **Event:** Add address field to the booking form.
+- **Action:** Update `index.html` and `script.js` to include and send address data.
 - **Status:** Complete and Verified.

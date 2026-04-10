@@ -65,6 +65,7 @@ if (contactForm) {
         const data = {
             name: formData.get('name'),
             phone: formData.get('phone'),
+            address: formData.get('address'),
             service: formData.get('service'),
             message: formData.get('message'),
             timestamp: new Date().toISOString(),

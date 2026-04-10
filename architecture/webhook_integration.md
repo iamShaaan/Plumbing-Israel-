@@ -6,6 +6,7 @@ Connect the landing page booking form to the n8n backend for automated lead proc
 ## Inputs
 - Webhook URL: `https://n8n.srv1454268.hstgr.cloud/webhook-test/d276f42d-b4df-4071-ada2-aecb65410ee7`
 - Form ID: `contactForm`
+- Fields: `name`, `phone`, `address`, `service`, `message`
 
 ## Logic
 1. Capture `submit` event on `contactForm`.
