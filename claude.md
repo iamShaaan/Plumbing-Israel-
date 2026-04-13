@@ -1,20 +1,34 @@
-# Project Constitution: Miley Plumbing Services (Hebrew)
+# Project Constitution: Miley Plumbing Services (Israel)
 
-## Data Schemas (gemini.md)
-### Business Profile
-- `name`: "מיילי שרותי אינסטלציה" (Miley Plumbing Services)
-- `owner`: "מיילי" (Miley)
-- `phone`: "+972 52-688-3212"
-- `location`: "Gush Dan / Central Israel"
-- `language`: "Hebrew"
-- `direction`: "RTL"
+## 🎯 North Star
+Recreate a premium, Hebrew-localized plumbing landing page for "Miley Plumbing Services" using deterministic business data from Google Maps.
 
-## Behavioral Rules
-1. **RTL Logic:** Ensure all layouts are mirrored for Right-To-Left reading.
-2. **Cultural Tone:** Professional, reliable, and community-focused (volunteer spirit).
-3. **Deterministic Localization:** If a string is in English, it must be translated to Hebrew.
+## 🛠️ Data Schema (gemini.md)
+```json
+{
+  "business": {
+    "name_he": "מיילי שרותי אינסטלציה",
+    "owner": "Daniel Miley",
+    "phone": "+972 52-688-3212",
+    "location": "גוש דן והמרכז",
+    "specialty": "אינסטלטור מומחה, מתנדב למען הקהילה",
+    "website_fb": "https://www.facebook.com/mailiplumbing"
+  },
+  "visuals": {
+    "primary_color": "#0A3D91",
+    "accent_color": "#4DA6FF",
+    "logo_desc": "Blue circular logo with wrench and Hebrew text"
+  }
+}
+```
 
-## Architectural Invariants
-- Core logic in `Plumbing project/`.
-- Local ephemeral files in `.tmp/`.
-- RTL overrides in `style.css` or a new `rtl.css`.
+## ⚖️ Behavioral Rules
+1. **RTL First:** All layouts must be Right-To-Left (RTL).
+2. **Community Focus:** Highlight the "Volunteer Plumber" aspect prominently.
+3. **No Placeholders:** Professional images only (generate if needed).
+4. **Consistency:** Ensure phone numbers and names are synced across all components.
+
+## 🏗️ Architectural Invariants
+- **Layer 1 (Architecture):** Markdown SOPs in `architecture/`.
+- **Layer 2 (Navigation):** Agent-led logic.
+- **Layer 3 (Tools):** Simple HTML/CSS/JS in `Plumbing project/`.

@@ -3,14 +3,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Assistant:wght@300;400;600;700&display=swap');
 
 :root {
-    --primary-color: #0A3D91;
-    --secondary-color: #FFFFFF;
-    --accent-color: #4DA6FF;
-    --text-color: #333333;
-    --light-gray: #F8F9FA;
-    --transition: all 0.3s ease;
-    --shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-    --border-radius: 12px;
+    --primary-color: #0d47a1;
+    --secondary-color: #ffffff;
+    --accent-color: #00bcd4;
+    --accent-hover: #00acc1;
+    --text-color: #1a1a1a;
+    --light-gray: #f5f7fa;
+    --glass-bg: rgba(255, 255, 255, 0.85);
+    --glass-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.15);
+    --transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+    --shadow: 0 10px 40px rgba(0, 0, 0, 0.08);
+    --border-radius: 16px;
 }
 
 * {
@@ -46,7 +49,9 @@ ul {
 /* Header & Navigation */
 header {
     background: var(--secondary-color);
-    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.03);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
     position: sticky;
     top: 0;
     z-index: 1000;
@@ -331,18 +336,21 @@ nav {
 }
 
 .service-card {
-    background: white;
+    background: var(--glass-bg);
     padding: 40px;
     border-radius: var(--border-radius);
     box-shadow: var(--shadow);
     text-align: center;
     transition: var(--transition);
-    border-bottom: 4px solid transparent;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
 }
 
 .service-card:hover {
-    transform: translateY(-10px);
-    border-bottom-color: var(--accent-color);
+    transform: translateY(-12px);
+    box-shadow: 0 15px 45px rgba(0, 0, 0, 0.12);
+    border-color: var(--accent-color);
 }
 
 .service-icon {

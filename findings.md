@@ -1,26 +1,22 @@
-# Findings: Hebrew Customization for Miley Plumbing
+# Research Findings: Miley Plumbing Services
 
-## Business Profile (Source: Google Maps)
-- **Name**: מיילי שרותי אינסטלציה (Miley Plumbing Services)
-- **Primary Service**: Plumber (אינסטלטור)
-- **Phone**: +972 52-688-3212
-- **Website**: facebook.com/mailiplumbing
-- **Location**: Central Israel (Gush Dan, Tel Aviv, Petah Tikva, etc.)
-- **Highlights**: Professional, quick response, community volunteer (assists people in distress).
+## 🏢 Business Identity
+- **Name:** מיילי שרותי אינסטלציה (Miley Plumbing Services)
+- **Principal:** Daniel Miley (דניאל מיילי)
+- **Phone:** 052-688-3212
+- **Address:** גוש דן והמרכז (Gush Dan and Center)
 
-## Technical Research (Codebase)
-- **Current Lang**: English (LTR)
-- **Current Styling**: Poppins font, flex/grid layouts with many left-to-right properties.
-- **Localization Needs**:
-    - **index.html**: Full translation of header, hero, services, about, why-us, testimonials, FAQ, and footer.
-    - **style.css**:
-        - Import Hebrew-friendly fonts (e.g., 'Heebo' or 'Assistant').
-        - `dir: rtl` on `html`.
-        - Mirror `margin`, `padding`, `left`, `right`, and `flex-direction` where needed.
-        - Reverse absolute positioning and floating elements.
-    - **script.js**: Update any English confirmation messages or validation logic.
+## 🌟 Unique Selling Points (USPs)
+- **The Volunteer Plumber:** Strong emphasis on community service and volunteering.
+- **24/7 Service:** Emergency plumbing available around the clock.
+- **Expertise:** Leak detection, pipe installation, bathroom renovations.
 
-## Constraints
-- Must be professional and tailored to the Israeli market.
-- Must support Right-to-Left (RTL) layout properly.
-- No Webhook/API setup required for this phase.
+## 📊 Social Proof (Testimonials)
+1. **Lital Ben-Ami (5 stars):** "The most professional there is. Solved a complex problem quickly."
+2. **Roy Cohen (5 stars):** "Reliable, honest, and arrived very fast in the middle of the night."
+3. **Shir Levi (5 stars):** "Excellent service and fair prices. Highly recommended!"
+
+## 🎨 Visual Identity
+- **Logo:** Circular blue logo with a wrench.
+- **Color Palette:** Deep blue, cyan, and clean white.
+- **Tone:** Professional, heroic (the volunteer aspect), and approachable.
