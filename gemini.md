@@ -1,17 +1,26 @@
-# Data Schema: GitHub Repository Deployment
+# Data Schema: Business Customization
 
 ```json
 {
-  "repository": {
-    "name": "Plumbing Landing page",
-    "owner": "iamShaaan",
-    "visibility": "public",
-    "description": "Premium landing page for plumbing services.",
-    "remote_url": "https://github.com/iamShaaan/Plumbing-Landing-page.git",
-    "files_included": "All source + project metadata",
-    "branch": "main"
+  "business": {
+    "name_he": "מיילי שרותי אינסטלציה",
+    "owner": "מיילי",
+    "phone": "+972 52-688-3212",
+    "location": "גוש דן והמרכז",
+    "specialty": "אינסטלטור מומחה, מתנדב למען הקהילה",
+    "website_fb": "https://www.facebook.com/mailiplumbing"
   },
-  "deployment_trigger": "manual_push"
+  "localization": {
+    "language": "he",
+    "direction": "rtl",
+    "font_family": "'Heebo', sans-serif"
+  },
+  "repository": {
+    "name": "Plumbing Israel",
+    "owner": "iamShaaan",
+    "remote_url": "git@github.com:iamShaaan/Plumbing-Israel-.git",
+    "branch": "main"
+  }
 }
 ```
 
@@ -34,16 +43,7 @@
 
 # Maintenance Log
 
-## 2026-04-10: Initial Export
-- **Event:** Successfully created and populated the project's new GitHub repository.
-- **Action:** Created `iamShaaan/Plumbing-Landing-page`, linked local repository via a temporary PAT-authenticated remote, and pushed all files including planning metadata.
-- **Status:** Complete and Verified.
-
-## 2026-04-10: Webhook Update
-- **Event:** Update booking form to send data to n8n webhook.
-- **Action:** Update `script.js` to use `fetch` with the new n8n URL.
-- **Status:** Complete and Verified.
-## 2026-04-10: Location Field Addition
-- **Event:** Add address field to the booking form.
-- **Action:** Update `index.html` and `script.js` to include and send address data.
-- **Status:** Complete and Verified.
+## 2026-04-13: Hebrew Localization & Deployment
+- **Event:** Started customization for Miley Plumbing Services (Israel).
+- **Action:** Extracted business details, localized website to Hebrew (RTL), and prepared for deployment to `iamShaaan/Plumbing-Israel-`.
+- **Status:** Complete.

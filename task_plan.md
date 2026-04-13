@@ -1,24 +1,20 @@
-# Task Plan: Booking Form Enhancement (Location/Address)
+# Task Plan: Project Continuation (Post-Clone)
 
 ## Phase 1: B - Blueprint (Vision & Logic)
-- [x] Identify placement for "Address" field in `index.html`
-- [x] Define updated Webhook Payload Schema in `gemini.md`
-- [x] Approve Blueprint for implementation
+- [x] Clone repository from GitHub
+- [x] Adopt and initialize project memory
+- [/] Define North Star for current session (Discovery Questions)
 
 ## Phase 2: L - Link (Connectivity)
-- [x] Verify local git state
+- [ ] Verify local environment and dependencies
 
 ## Phase 3: A - Architect (The 3-Layer Build)
-- [x] Layer 1: Update `architecture/webhook_integration.md` SOP with new field
-- [x] Layer 2: Decision on validation/formatting for Address field
-- [x] Layer 3: Update `index.html` with Address input
-- [x] Layer 3: Update `script.js` to capture and send Address data
+- [ ] Layer 1: Technical SOPs (TBD)
+- [ ] Layer 2: Decision Logic (TBD)
+- [ ] Layer 3: Implementation (TBD)
 
 ## Phase 4: S - Stylize (Refinement & UI)
-- [x] UI Refinement: Ensure the new input matches the form styling
-- [x] Verify form responsiveness with the additional field
+- [ ] Refine output/delivery (TBD)
 
 ## Phase 5: T - Trigger (Deployment)
-- [x] Git: `git commit -am "feat: add location field to booking form"`
-- [x] Git: `git push origin main`
-- [x] Documentation: Update Maintenance Log in `gemini.md`
+- [ ] Deploy/Trigger (TBD)

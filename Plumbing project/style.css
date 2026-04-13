@@ -1,5 +1,6 @@
 /* Google Fonts */
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Assistant:wght@300;400;600;700&display=swap');
 
 :root {
     --primary-color: #0A3D91;
@@ -16,7 +17,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Heebo', 'Assistant', sans-serif;
 }
 
 body {
@@ -62,7 +63,7 @@ header {
 }
 
 .top-bar i {
-    margin-right: 8px;
+    margin-left: 8px;
 }
 
 nav {
@@ -1109,4 +1110,56 @@ section[id] {
         padding: 11px 18px;
         font-size: 0.9rem;
     }
+}
+
+/* RTL Specific Overrides */
+[dir="rtl"] .top-bar {
+    justify-content: flex-start;
+}
+
+[dir="rtl"] .logo img {
+    margin-left: 15px;
+    margin-right: 0;
+}
+
+[dir="rtl"] .nav-emergency::after {
+    right: auto;
+    left: -10px;
+}
+
+[dir="rtl"] .about-container {
+    flex-direction: row; /* Flex will handle RTL automatically if not row-reverse */
+}
+
+[dir="rtl"] .why-icon {
+    margin-left: 0;
+}
+
+[dir="rtl"] .faq-question i {
+    transition: transform 0.3s ease;
+}
+
+[dir="rtl"] .footer-col h4::after {
+    left: auto;
+    right: 0;
+}
+
+[dir="rtl"] .trust-badges i {
+    margin-left: 12px;
+}
+
+[dir="rtl"] .mobile-floating-call {
+    right: auto;
+    left: 20px;
+}
+
+/* Fix for icons and margins in RTL */
+[dir="rtl"] i {
+    margin-left: 5px;
+    margin-right: 0;
+}
+
+[dir="rtl"] .btn i {
+    margin-left: 10px;
+    margin-right: 0;
 }

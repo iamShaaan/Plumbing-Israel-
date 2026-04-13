@@ -58,7 +58,7 @@ if (contactForm) {
         const originalText = btn.innerText;
         
         btn.disabled = true;
-        btn.innerText = 'Sending Request...';
+        btn.innerText = 'שולח בקשה...';
         
         // Send data to n8n webhook
         const formData = new FormData(contactForm);
@@ -84,7 +84,7 @@ if (contactForm) {
         })
         .then(response => {
             if (response.ok) {
-                alert('Your booking request has been sent! We will contact you shortly.');
+                alert('בקשת ההזמנה שלך נשלחה! ניצור איתך קשר בהקדם.');
                 contactForm.reset();
             } else {
                 throw new Error('Network response was not ok');
@@ -92,7 +92,7 @@ if (contactForm) {
         })
         .catch(error => {
             console.error('Error:', error);
-            alert('Something went wrong. Please try again or call us directly.');
+            alert('משהו השתבש. אנא נסו שוב או התקשרו אלינו ישירות.');
         })
         .finally(() => {
             btn.disabled = false;
